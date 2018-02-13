@@ -1,0 +1,122 @@
+{% extends "layout2.html" %}
+
+{% block content %}
+  <!-- skills -->
+	<div class="about skills">
+		<div class="container">
+			<div class="w3ls-title">
+				<h2 class="agileits-title">My skills</h2>
+			</div>
+			<div class="skill-agileinfo">
+        <p></p>
+				<div class="skill-grids">
+					<div class="col-md-4 col-sm-4 skills-w3lsleft">
+						<h4>Extra Skills</h4>
+						<ul>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Redux</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Web RTC</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Web Audio API</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>PostgreSQL</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Express</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>GraphQL</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>PHP</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>C++</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Java</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Python</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Music Theory</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Jazz Music Performance</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Vocal Performance</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Signal Processing</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Circuit Design and Analysis</li>
+						</ul>
+					</div>
+					<div class="col-md-8 col-sm-8 skills-w3lsright">
+						<h4>Technical Skills</h4>
+						<div class="skillbar" data-percent="100">
+							<span class="skillbar-title" style="background:#e08808;">JavaScript</span>
+							<p class="skillbar-bar" style="background: #ff9d0d;"></p>
+							<span class="skill-bar-percent"></span>
+						</div>
+						<!-- End Skill Bar --> 
+						<div class="skillbar" data-percent="90">
+							<span class="skillbar-title" style="background:#0396d8;">HTML/CSS3</span>
+							<p class="skillbar-bar" style="background:#03A9F4;"></p>
+							<span class="skill-bar-percent"></span>
+						</div>
+						<!-- End Skill Bar --> 
+						<div class="skillbar" data-percent="95">
+							<span class="skillbar-title" style="background:#028679;">React.js</span>
+							<p class="skillbar-bar" style="background: #009688;"></p>
+							<span class="skill-bar-percent"></span>
+						</div>
+						<!-- End Skill Bar -->  
+						<div class="skillbar" data-percent="90">
+							<span class="skillbar-title" style="background:#9226a4;">Node.js</span>
+							<p class="skillbar-bar" style="background:#b32eca;"></p>
+							<span class="skill-bar-percent"></span>
+						</div>
+						<!-- End Skill Bar -->
+            <div class="skillbar" data-percent="90">
+							<span class="skillbar-title" style="background:red;">Web Sockets</span>
+							<p class="skillbar-bar" style="background:red;"></p>
+							<span class="skill-bar-percent"></span>
+						</div>
+						<!-- End Skill Bar -->  
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- Stats --> 
+				<div class="stats news-w3layouts">  
+					<div class="stats-info agileits-w3layouts">
+						<div class="col-sm-3 col-xs-6 stats-grid">
+							<div class="stats-img">
+								<i class="fa fa-heart-o" aria-hidden="true"></i>
+							</div>
+							<p>Happy Clients</p>
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='157000' data-delay='.5' data-increment="100">157000</div>
+						</div>
+						<div class="col-sm-3 col-xs-6 stats-grid">
+							<div class="stats-img w3-agileits">
+								<i class="fa fa-clone" aria-hidden="true"></i>
+							</div>
+							<p>Our Events</p>
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='850' data-delay='8' data-increment="1">850</div>
+						</div>
+						<div class="col-sm-3 col-xs-6 stats-grid">
+							<div class="stats-img w3-agileits">
+								<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							</div>	
+							<p>Projects</p> 
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='80000' data-delay='.5' data-increment="100">80000</div>
+						</div>
+						<div class="col-sm-3 col-xs-6 stats-grid">
+							<div class="stats-img w3-agileits">
+								<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+							</div>
+							<p>Awards</p>
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1">269</div>
+						</div>
+						<div class="clearfix"></div>
+					</div> 
+				</div> 
+				<!-- //Stats -->   
+			</div> 
+		</div> 
+	</div>
+	<!-- //skills -->
+	<!-- Skill Bar js --> 
+	<script src="js/skill.bars.jquery.js"></script> 
+	<script> 
+	$(document).ready(function(){
+		
+		$('.skillbar').skillBars({
+			from: 0,
+			speed: 4000, 
+			interval: 100,
+			decimals: 0,
+		});
+		
+	}); 
+	</script> 
+	<!-- //End Skill Bar js -->  
+{% endblock %}
